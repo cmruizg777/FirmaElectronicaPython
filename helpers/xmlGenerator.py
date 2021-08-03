@@ -1,58 +1,119 @@
 import xml.etree.cElementTree as ET
+import datetime
+import pyodbc as pyodbc
+
 import db.Connection as db
+from helpers.Module11 import Module11
+
 conn =  db.Connection();
 class xmlGenerator():
+
     def __init__(self):
-        self.cursor = db.Connection().getCursor()
+        print('xml generator')
 
-    def getXmlData(self):
-        result = self.cursor.execute("EXEC sp_xml_guiaRemision 192,'SAROCIBE'")
-        tables = self.cursor.fetchall()
-        print(tables)
+    def _getXmlData(self):
+        try:
+            self.myDbConnection = db.Connection()
+            cursor = self.myDbConnection.getCursor()
+            cursor.execute("{call sp_xml_guiaRemision(192,'SAROCIBE')}")
+            tables = [];
+            dataset = cursor.fetchall()
+            tables.append(dataset);
+            #print(dataset)
+            while (cursor.nextset()):
+                dataset = cursor.fetchall()
+                #print(dataset)
+                tables.append(dataset);
+            return tables
+        except pyodbc.Error as ex:
+            print(ex)
+        except:
+            print('Error')
 
-root = ET.Element("guiaRemision",version="1.1.0",id="comprobante")
-infotributaria = ET.SubElement(root,"infoTributaria")
-ET.SubElement(infotributaria, "ambiente").text = "1"
-ET.SubElement(infotributaria, "tipoEmision").text = "1"
-ET.SubElement(infotributaria, "nombreComercial").text = "1"
-ET.SubElement(infotributaria, "ruc").text = "1"
-ET.SubElement(infotributaria, "claveAcceso").text = "1"
-ET.SubElement(infotributaria, "codDoc").text = "1"
-ET.SubElement(infotributaria, "estab").text = "1"
-ET.SubElement(infotributaria, "ptoEmi").text = "1"
-ET.SubElement(infotributaria, "secuencial").text = "1"
-ET.SubElement(infotributaria, "dirMatriz").text = "1"
+    def generateRemissionGuideXml(self):
 
-infoGuiaRemision = ET.SubElement(root,"infoGuiaRemision")
-                                        
-ET.SubElement(infoGuiaRemision, "dirEstablecimiento").text = "2"
-ET.SubElement(infoGuiaRemision, "dirPartida").text = "2"
-ET.SubElement(infoGuiaRemision, "razonSocialTransportista").text = "2"
-ET.SubElement(infoGuiaRemision, "tipoIdentificacionTransportista").text = "2"
-ET.SubElement(infoGuiaRemision, "rucTransportista").text = "2"
-ET.SubElement(infoGuiaRemision, "obligadoContabilidad").text = "2"
-ET.SubElement(infoGuiaRemision, "fechaIniTransporte").text = "2"
-ET.SubElement(infoGuiaRemision, "fechaFinTransporte").text = "2"
-ET.SubElement(infoGuiaRemision, "placa").text = "2"
+        data = self._getXmlData()
+        infoTributariaEmpresa = data[0][0]
+        infoTributariaSecuenciales = data[1][0]
+        infoTransportista = data[2][0]
+        infoDestinatario = data[3][0]
+        infoDetalles = data[4]
+        secuencialLength = len(str(infoTributariaSecuenciales[6]))
+        zeros = ""
 
-destinatarios = ET.SubElement(root,"destinatarios")
-destinatario = ET.SubElement(destinatarios,"destinatario")
-ET.SubElement(destinatario, "identificacionDestinatario").text = "3"
-ET.SubElement(destinatario, "razonSocialDestinatario").text = "3"
-ET.SubElement(destinatario, "dirDestinatario").text = "3"
-ET.SubElement(destinatario, "motivoTraslado").text = "3"
-detalles = ET.SubElement(destinatario,"detalles")
-detalle = ET.SubElement(detalles,"detalle")
-ET.SubElement(detalle, "codigoInterno").text = "3"
-ET.SubElement(detalle, "codigoAdicional").text = "3"
-ET.SubElement(detalle, "descripcion").text = "3"
-ET.SubElement(detalle, "cantidad").text = "3"
-infoadicional = ET.SubElement(root,"infoAdicional")
-ET.SubElement(infoadicional, "campoAdicional", nombre="Agente de Retencion").text = "No.Resolucion:"
+        for i in range(9-secuencialLength):
+            zeros += "0"
 
+        secuencial = zeros + str(infoTributariaSecuenciales[6])
+        ptoEmision = infoTributariaSecuenciales[4]
+        sucursal = infoTributariaSecuenciales[5]  # sucursal
+        print(secuencial)
+        fecha = datetime.datetime.strptime(infoTributariaSecuenciales[7], '%d/%m/%Y').date()
 
-arbol = ET.ElementTree(root)
+        mod11 = Module11(
+            fecha,                      #fecha
+            "06",                       #tipoComprobante
+            infoTributariaEmpresa[-3],  #ruc
+            "1",                        #ambiente
+            ptoEmision,                 #ptoEmision
+            sucursal,                   #sucursal
+            secuencial,                 #secuencial
+            "12345678"                  #random8Digitos
+        )
+        claveAcceso = mod11.getModule11()
 
+        print(infoTributariaEmpresa)
+        print(infoTributariaSecuenciales)
+        print(infoTransportista)
+        print(infoDestinatario)
+        for deta in infoDetalles:
+            print(deta)
 
+        root = ET.Element("guiaRemision", version="1.1.0", id="comprobante")
+        infotributaria = ET.SubElement(root, "infoTributaria")
+        ET.SubElement(infotributaria, "ambiente").text = "1"
+        ET.SubElement(infotributaria, "tipoEmision").text = "1"
+        ET.SubElement(infotributaria, "nombreComercial").text = infoTributariaEmpresa[1]
+        ET.SubElement(infotributaria, "ruc").text = infoTributariaEmpresa[-3]
 
-arbol.write("C:\Guia Electronica\GuiaElectronica Procesados\prueba.xml", encoding = "UTF-8", xml_declaration = True)
+        ET.SubElement(infotributaria, "claveAcceso").text = claveAcceso
+
+        ET.SubElement(infotributaria, "codDoc").text = "01"
+        ET.SubElement(infotributaria, "estab").text = sucursal
+        ET.SubElement(infotributaria, "ptoEmi").text = ptoEmision
+        ET.SubElement(infotributaria, "secuencial").text = secuencial
+        ET.SubElement(infotributaria, "dirMatriz").text = infoTributariaEmpresa[3]
+
+        infoGuiaRemision = ET.SubElement(root, "infoGuiaRemision")
+
+        ET.SubElement(infoGuiaRemision, "dirEstablecimiento").text = infoTributariaEmpresa[3]
+        ET.SubElement(infoGuiaRemision, "dirPartida").text = infoTributariaEmpresa[3]
+        ET.SubElement(infoGuiaRemision, "razonSocialTransportista").text = infoTransportista[4]
+        ET.SubElement(infoGuiaRemision, "tipoIdentificacionTransportista").text = "04"
+        ET.SubElement(infoGuiaRemision, "rucTransportista").text = infoTransportista[2]
+        ET.SubElement(infoGuiaRemision, "obligadoContabilidad").text = "NO"
+        ET.SubElement(infoGuiaRemision, "fechaIniTransporte").text = infoTributariaSecuenciales[7]
+        ET.SubElement(infoGuiaRemision, "fechaFinTransporte").text =  infoTributariaSecuenciales[7]
+        ET.SubElement(infoGuiaRemision, "placa").text = infoTransportista[-2].strip()
+
+        destinatarios = ET.SubElement(root, "destinatarios")
+        destinatario = ET.SubElement(destinatarios, "destinatario")
+        ET.SubElement(destinatario, "identificacionDestinatario").text = infoDestinatario[3]
+        ET.SubElement(destinatario, "razonSocialDestinatario").text = infoDestinatario[4]
+        ET.SubElement(destinatario, "dirDestinatario").text = infoDestinatario[5]
+        ET.SubElement(destinatario, "motivoTraslado").text = "MOVILIZACION DE MERCADERIA"
+
+        detalles = ET.SubElement(destinatario, "detalles")
+        for infoDetalle in infoDetalles:
+            detalle = ET.SubElement(detalles, "detalle")
+            ET.SubElement(detalle, "codigoInterno").text = str(infoDetalle[0])
+            ET.SubElement(detalle, "codigoAdicional").text = str(infoDetalle[0])
+            ET.SubElement(detalle, "descripcion").text = str(infoDetalle[5])
+            ET.SubElement(detalle, "cantidad").text = str(infoDetalle[-3])
+
+        infoadicional = ET.SubElement(root, "infoAdicional")
+        ET.SubElement(infoadicional, "campoAdicional", nombre="Agente de Retencion").text = "No.Resolucion:"
+        arbol = ET.ElementTree(root)
+        fileName = "files\prueba2.xml"
+        arbol.write(fileName, encoding="UTF-8", xml_declaration=True)
+        return fileName

@@ -55,7 +55,7 @@ class Xades(object):
         TODO: Revisar return
         """
         #xml_str = xml_document.encode('utf-8')
-        JAR_PATH = 'firma/firmaXadesBes.jar'
+        #JAR_PATH = 'firma/firmaXadesBes.jar'
         JAR_PATH = 'firma/firmaxml1.jar'
         JAVA_CMD = 'java'
         firma_path = os.path.join(os.path.dirname(__file__), JAR_PATH)
@@ -72,8 +72,8 @@ class Xades(object):
         ]
         print(command)
         try:
-            print('Probando comando de firma digital')
-            #logging.info('Probando comando de firma digital')
+
+            logging.info('Firmando XML ...')
             subprocess.check_output(command)
         except subprocess.CalledProcessError as e:
             returncode = e.returncode

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<guiaRemision id="comprobante" version="1.1.0"><infoTributaria><ambiente>1</ambiente><tipoEmision>1</tipoEmision><nombreComercial>SALAZAR AGUILAR LUIS GUILLERMO</nombreComercial><ruc>0704453810001</ruc><claveAcceso>0505202106070445381000111000010000009301234567811</claveAcceso><codDoc>01</codDoc><estab>001</estab><ptoEmi>100</ptoEmi><secuencial>000000930</secuencial><dirMatriz>SAN MARCOS DECIMA QUINTA SN Y LUIS ESPINOZA</dirMatriz></infoTributaria><infoGuiaRemision><dirEstablecimiento>SAN MARCOS DECIMA QUINTA SN Y LUIS ESPINOZA</dirEstablecimiento><dirPartida>SAN MARCOS DECIMA QUINTA SN Y LUIS ESPINOZA</dirPartida><razonSocialTransportista>BRYAN MUÑOZ</razonSocialTransportista><tipoIdentificacionTransportista>04</tipoIdentificacionTransportista><rucTransportista>0750698789</rucTransportista><obligadoContabilidad>NO</obligadoContabilidad><fechaIniTransporte>05/05/2021</fechaIniTransporte><fechaFinTransporte>05/05/2021</fechaFinTransporte><placa>OBA1822</placa></infoGuiaRemision><destinatarios><destinatario><identificacionDestinatario>0703623652001</identificacionDestinatario><razonSocialDestinatario>MARICH VIVAR HOOVER ANDRES</razonSocialDestinatario><dirDestinatario>TENGUEL SITIO EL CONCHERO S/N</dirDestinatario><motivoTraslado>MOVILIZACION DE MERCADERIA</motivoTraslado><detalles><detalle><codigoInterno>1575</codigoInterno><codigoAdicional>1575</codigoAdicional><descripcion>GAVETAS CONICAS</descripcion><cantidad>460</cantidad></detalle><detalle><codigoInterno>1576</codigoInterno><codigoAdicional>1576</codigoAdicional><descripcion>GAVETAS CALADAS</descripcion><cantidad>60</cantidad></detalle><detalle><codigoInterno>1577</codigoInterno><codigoAdicional>1577</codigoAdicional><descripcion>BINES</descripcion><cantidad>0</cantidad></detalle><detalle><codigoInterno>1578</codigoInterno><codigoAdicional>1578</codigoAdicional><descripcion>OTROS</descripcion><cantidad>0</cantidad></detalle><detalle><codigoInterno>1579</codigoInterno><codigoAdicional>1579</codigoAdicional><descripcion>SACOS C/HIELO</descripcion><cantidad>450</cantidad></detalle><detalle><codigoInterno>1580</codigoInterno><codigoAdicional>1580</codigoAdicional><descripcion>SACOS METABISULFITO</descripcion><cantidad>0</cantidad></detalle><detalle><codigoInterno>1581</codigoInterno><codigoAdicional>1581</codigoAdicional><descripcion>SACOS SAL</descripcion><cantidad>0</cantidad></detalle></detalles></destinatario></destinatarios><infoAdicional><campoAdicional nombre="Agente de Retencion">No.Resolucion:</campoAdicional></infoAdicional><ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:etsi="http://uri.etsi.org/01903/v1.3.2#" Id="Signature228584">
+<ds:SignedInfo Id="Signature-SignedInfo171447">
+<ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"></ds:CanonicalizationMethod>
+<ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"></ds:SignatureMethod>
+<ds:Reference Id="SignedPropertiesID35639" Type="http://uri.etsi.org/01903#SignedProperties" URI="#Signature228584-SignedProperties764763">
+<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod>
+<ds:DigestValue>aOge/iWlWqwKjVC6CbzWa8G/IYA=</ds:DigestValue>
+</ds:Reference>
+<ds:Reference URI="#Certificate1839402">
+<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod>
+<ds:DigestValue>z8AvWEEOaoTRD6OQj6Su8+g/r98=</ds:DigestValue>
+</ds:Reference>
+<ds:Reference Id="Reference-ID-371992" URI="#comprobante">
+<ds:Transforms>
+<ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"></ds:Transform>
+</ds:Transforms>
+<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod>
+<ds:DigestValue>YkVZRpBUVia4wYAtOhmWdJ/slN0=</ds:DigestValue>
+</ds:Reference>
+</ds:SignedInfo>
+<ds:SignatureValue Id="SignatureValue119953">
+S9tflU8RQoO6rCvrgG8kZX5uHLBBaf+Wuwm3fEIdsS+YVO/MGOz2lMguL+xuyC9P1GHw4HOd7xtT
+DhxRCOMFRxCNVQD74H0NTH/lJklKmuRGgx5cKRxfRc7NyQw3FreQ9Wkop4eEwZLbKsvuknbyoZLU
+GhlXfYj25pQzhXx4zr7sRxGS8Q/qnQZ8Ml8OHJ56XIU8M1uOHucMBCAkv0tA61Iim1WgRBakxZf6
+M1ujQkx2gr3MKRYenl11VVodq54Ep3wJDcChB3eLnZt1qEidOgnnQjtjxyxVrIAj03yGniNnRGSs
+rgE3ow9YQEJY4MxgDYx4zB/ppsmBS5qcZntzOQ==
+</ds:SignatureValue>
+<ds:KeyInfo Id="Certificate1839402">
+<ds:X509Data>
+<ds:X509Certificate>
+MIIJkjCCCHqgAwIBAgIEVM5FWDANBgkqhkiG9w0BAQsFADCBkzELMAkGA1UEBhMCRUMxGzAZBgNV
+BAoTElNFQ1VSSVRZIERBVEEgUy5BLjEwMC4GA1UECxMnRU5USURBRCBERSBDRVJUSUZJQ0FDSU9O
+IERFIElORk9STUFDSU9OMTUwMwYDVQQDEyxBVVRPUklEQUQgREUgQ0VSVElGSUNBQ0lPTiBTVUIg
+U0VDVVJJVFkgREFUQTAeFw0xNjA2MTgxNTM1MDBaFw0yMTA2MTgxNjA1MDBaMIGZMQswCQYDVQQG
+EwJFQzEbMBkGA1UEChMSU0VDVVJJVFkgREFUQSBTLkEuMTAwLgYDVQQLEydFTlRJREFEIERFIENF
+UlRJRklDQUNJT04gREUgSU5GT1JNQUNJT04xOzATBgNVBAUTDDE3MDYxNjEyMzUxNzAkBgNVBAMT
+HUZSRURJTiBHVVNUQVZPIE1BTlRJTExBIFBFUkVaMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIB
+CgKCAQEAtRSE6xR4MfcXvLMTJWHIPKQYzBY4Rd15j5IJF49b/9d2WySl0m3oqiTWfzqAgvDyPOVF
+UWUqobIAf6R97/VIgiCy+UgJk/9N9XLY7LYsXa9MSWNI/g36x0231kFLd62M4tHdalq4eNqXGW8m
+zU4fIhOYHMCOKVPQjF9VSMFd8FXz0zQm4SDzAyfsz+gIIUqgZE1Vz8gxiGAku9uu9U291CY1XI+q
+VPa+iNUb22jMdPbgdrDhzicNoDM+GSIeyXXdo5tC/c8p7NgGhMH2Qds2CKC4+wXNFCTX/bO1tB9K
+zBAEzpfCqsIoM8KcS8tGe9nUXNvbrcCNd/oKrft7pHFblwIDAQABo4IF5DCCBeAwCwYDVR0PBAQD
+AgXgMFkGCCsGAQUFBwEBBE0wSzBJBggrBgEFBQcwAYY9aHR0cDovL29jc3Bndy5zZWN1cml0eWRh
+dGEubmV0LmVjL2VqYmNhL3B1YmxpY3dlYi9zdGF0dXMvb2NzcDCBzAYDVR0gBIHEMIHBMEAGCisG
+AQQBgqZyAgkwMjAwBggrBgEFBQcCAjAkGiJDZXJ0aWZpY2FkbyBkZSBSZXByZXNlbnRhbnRlIExl
+Z2FsMH0GCisGAQQBgqZyAgMwbzBtBggrBgEFBQcCARZhaHR0cHM6Ly93d3cuc2VjdXJpdHlkYXRh
+Lm5ldC5lYy9sZXllc19ub3JtYXRpdmFzL1BvbGl0aWNhcyBkZSBDZXJ0aWZpY2FkbyBSZXByZXNl
+bnRhbnRlIExlZ2FsLnBkZjAjBgorBgEEAYKmcgMKBBUTE0NBQkxFU1BFRUQgQ0lBIExUREEwHQYK
+KwYBBAGCpnIDCwQPEw0xMDkxNzI1MDQxMDAxMBoGCisGAQQBgqZyAwEEDBMKMTcwNDg2MjYwNDAe
+BgorBgEEAYKmcgMCBBATDkZSRURJTiBHVVNUQVZPMBgGCisGAQQBgqZyAwMEChMITUFOVElMTEEw
+FQYKKwYBBAGCpnIDBAQHEwVQRVJFWjAXBgorBgEEAYKmcgMFBAkTB0dFUkVOVEUwKgYKKwYBBAGC
+pnIDBwQcExpCT0xJVkFSIDE1MSBZIFJBRkFFTCBUUk9ZQTAbBgorBgEEAYKmcgMIBA0TCzU5MzYy
+NjA5NTQyMBYGCisGAQQBgqZyAwkECBMGSUJBUlJBMBcGCisGAQQBgqZyAwwECRMHRUNVQURPUjAf
+BgorBgEEAYKmcgMgBBETDzAwMjAwMTAwMDAwMDEwNDATBgorBgEEAYKmcgMhBAUTA1BGWDAdBgNV
+HREEFjAUgRJlcmFyaWFzMUBnbWFpbC5jb20wggJ5BgNVHR8EggJwMIICbDCCAmigggJkoIICYIY9
+aHR0cDovL29jc3Bndy5zZWN1cml0eWRhdGEubmV0LmVjL2VqYmNhL3B1YmxpY3dlYi9zdGF0dXMv
+b2NzcIaB1GxkYXA6Ly9kaXJlY3Quc2VjdXJpdHlkYXRhLm5ldC5lYy9jbj1DUkw4Nixjbj1BVVRP
+UklEQUQlMjBERSUyMENFUlRJRklDQUNJT04lMjBTVUIlMjBTRUNVUklUWSUyMERBVEEsb3U9RU5U
+SURBRCUyMERFJTIwQ0VSVElGSUNBQ0lPTiUyMERFJTIwSU5GT1JNQUNJT04sbz1TRUNVUklUWSUy
+MERBVEElMjBTLkEuLGM9RUM/Y2VydGlmaWNhdGVSZXZvY2F0aW9uTGlzdD9iYXNlhoGeaHR0cHM6
+Ly9kaXJlY3Quc2VjdXJpdHlkYXRhLm5ldC5lYy9+Y3JsL2F1dG9yaWRhZF9kZV9jZXJ0aWZpY2Fj
+aW9uX3N1Yl9zZWN1cml0eV9kYXRhX2VudGlkYWRfZGVfY2VydGlmaWNhY2lvbl9kZV9pbmZvcm1h
+Y2lvbl9jdXJpdHlfZGF0YV9zLmEuX2NfZWNfY3JsZmlsZS5jcmykgaYwgaMxCzAJBgNVBAYTAkVD
+MRswGQYDVQQKExJTRUNVUklUWSBEQVRBIFMuQS4xMDAuBgNVBAsTJ0VOVElEQUQgREUgQ0VSVElG
+SUNBQ0lPTiBERSBJTkZPUk1BQ0lPTjE1MDMGA1UEAxMsQVVUT1JJREFEIERFIENFUlRJRklDQUNJ
+T04gU1VCIFNFQ1VSSVRZIERBVEExDjAMBgNVBAMTBUNSTDg2MCsGA1UdEAQkMCKADzIwMTYwNjE4
+MTUzNTAwWoEPMjAyMTA2MTgxNjA1MDBaMB8GA1UdIwQYMBaAFPcvTOB152KjeJZbBrYucTvMbD+Q
+MB0GA1UdDgQWBBQJw3yUNOxneUUPp/xB6q8QfVUq1TAJBgNVHRMEAjAAMBkGCSqGSIb2fQdBAAQM
+MAobBFY4LjEDAgOoMA0GCSqGSIb3DQEBCwUAA4IBAQA5+2s+R1C4lBnJ8+1awVlPuce0+kQlRiJo
+anQX7VoXaDd+3jE/39I8VMOrj5JX0WRgslr/d0ylBu0uI6ogW+aVNrI6AshUM1bB4+ll2ULFvpXj
+0aUgi/+C8F9lm+Sz2LC4Z2cSyak6i9BsbZZS1aYdCBdli9HRrDy/FF57R8tTjk16L2jpIvF5iwwq
+ib8FKGb2/Xf2HtpgPQZcfGy6SoqK0PQUrvOQpGExTItFwuPYUmNZuzJlhLOBE7ofkBvLhNW6jera
+A73TCB6CiPx4j/SXI/s3NBGuHRdWSPL9hBAAccVfib1tH7PjiR8ALAgCQwL+2wtYM/uT5tD/HUc3
+bybv
+</ds:X509Certificate>
+</ds:X509Data>
+<ds:KeyValue>
+<ds:RSAKeyValue>
+<ds:Modulus>
+tRSE6xR4MfcXvLMTJWHIPKQYzBY4Rd15j5IJF49b/9d2WySl0m3oqiTWfzqAgvDyPOVFUWUqobIA
+f6R97/VIgiCy+UgJk/9N9XLY7LYsXa9MSWNI/g36x0231kFLd62M4tHdalq4eNqXGW8mzU4fIhOY
+HMCOKVPQjF9VSMFd8FXz0zQm4SDzAyfsz+gIIUqgZE1Vz8gxiGAku9uu9U291CY1XI+qVPa+iNUb
+22jMdPbgdrDhzicNoDM+GSIeyXXdo5tC/c8p7NgGhMH2Qds2CKC4+wXNFCTX/bO1tB9KzBAEzpfC
+qsIoM8KcS8tGe9nUXNvbrcCNd/oKrft7pHFblw==
+</ds:Modulus>
+<ds:Exponent>AQAB</ds:Exponent>
+</ds:RSAKeyValue>
+</ds:KeyValue>
+</ds:KeyInfo>
+<ds:Object Id="Signature228584-Object201550"><etsi:QualifyingProperties Target="#Signature228584"><etsi:SignedProperties Id="Signature228584-SignedProperties764763"><etsi:SignedSignatureProperties><etsi:SigningTime>2021-08-02T18:12:25-05:00</etsi:SigningTime><etsi:SigningCertificate><etsi:Cert><etsi:CertDigest><ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod><ds:DigestValue>GjoPkHblYkmpfTiqa51lJbI3l7Y=</ds:DigestValue></etsi:CertDigest><etsi:IssuerSerial><ds:X509IssuerName>CN=AUTORIDAD DE CERTIFICACION SUB SECURITY DATA,OU=ENTIDAD DE CERTIFICACION DE INFORMACION,O=SECURITY DATA S.A.,C=EC</ds:X509IssuerName><ds:X509SerialNumber>1422804312</ds:X509SerialNumber></etsi:IssuerSerial></etsi:Cert></etsi:SigningCertificate></etsi:SignedSignatureProperties><etsi:SignedDataObjectProperties><etsi:DataObjectFormat ObjectReference="#Reference-ID-371992"><etsi:Description>Comprobante</etsi:Description><etsi:MimeType>text/xml</etsi:MimeType></etsi:DataObjectFormat></etsi:SignedDataObjectProperties></etsi:SignedProperties></etsi:QualifyingProperties></ds:Object></ds:Signature></guiaRemision>
