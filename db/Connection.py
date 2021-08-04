@@ -4,7 +4,9 @@ class Connection():
 
     def __init__(self):
         try:
-            self.cnxn = pyodbc.connect(r'Driver=SQL Server;Server=.\SQLEXPRESS;Database=DBGUIASREMISION;Trusted_Connection=yes;')
+
+            self.cnxn = pyodbc.connect(r'Driver=SQL Server;Server=EDWIN-PC\DESARROLLO;Database=DBGUIASREMISION;Trusted_Connection=yes;')
+
             print("Conexion Exitosa!")
         except Exception as e:
             print("Ocurrió un error al conectar a SQL Server: ", e)
