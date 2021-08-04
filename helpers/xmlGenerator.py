@@ -1,38 +1,16 @@
 import xml.etree.cElementTree as ET
 import datetime
-import pyodbc as pyodbc
-
-import db.Connection as db
 from helpers.Module11 import Module11
 
-conn =  db.Connection();
+
 class xmlGenerator():
 
     def __init__(self):
         print('xml generator')
 
-    def _getXmlData(self):
-        try:
-            self.myDbConnection = db.Connection()
-            cursor = self.myDbConnection.getCursor()
-            cursor.execute("{call sp_xml_guiaRemision(192,'SAROCIBE')}")
-            tables = [];
-            dataset = cursor.fetchall()
-            tables.append(dataset);
-            #print(dataset)
-            while (cursor.nextset()):
-                dataset = cursor.fetchall()
-                #print(dataset)
-                tables.append(dataset);
-            return tables
-        except pyodbc.Error as ex:
-            print(ex)
-        except:
-            print('Error')
 
-    def generateRemissionGuideXml(self):
 
-        data = self._getXmlData()
+    def generateRemissionGuideXml(self, data):
         infoTributariaEmpresa = data[0][0]
         infoTributariaSecuenciales = data[1][0]
         infoTransportista = data[2][0]
@@ -71,21 +49,18 @@ class xmlGenerator():
 
         root = ET.Element("guiaRemision", version="1.1.0", id="comprobante")
         infotributaria = ET.SubElement(root, "infoTributaria")
-        ET.SubElement(infotributaria, "ambiente").text = "1"
+        ET.SubElement(infotributaria, "ambiente").text = "1" # 1 -> PRUEBAS
         ET.SubElement(infotributaria, "tipoEmision").text = "1"
         ET.SubElement(infotributaria, "nombreComercial").text = infoTributariaEmpresa[1]
         ET.SubElement(infotributaria, "ruc").text = infoTributariaEmpresa[-3]
-
         ET.SubElement(infotributaria, "claveAcceso").text = claveAcceso
-
-        ET.SubElement(infotributaria, "codDoc").text = "01"
+        ET.SubElement(infotributaria, "codDoc").text = "06"
         ET.SubElement(infotributaria, "estab").text = sucursal
         ET.SubElement(infotributaria, "ptoEmi").text = ptoEmision
         ET.SubElement(infotributaria, "secuencial").text = secuencial
         ET.SubElement(infotributaria, "dirMatriz").text = infoTributariaEmpresa[3]
 
         infoGuiaRemision = ET.SubElement(root, "infoGuiaRemision")
-
         ET.SubElement(infoGuiaRemision, "dirEstablecimiento").text = infoTributariaEmpresa[3]
         ET.SubElement(infoGuiaRemision, "dirPartida").text = infoTributariaEmpresa[3]
         ET.SubElement(infoGuiaRemision, "razonSocialTransportista").text = infoTransportista[4]
@@ -97,6 +72,7 @@ class xmlGenerator():
         ET.SubElement(infoGuiaRemision, "placa").text = infoTransportista[-2].strip()
 
         destinatarios = ET.SubElement(root, "destinatarios")
+
         destinatario = ET.SubElement(destinatarios, "destinatario")
         ET.SubElement(destinatario, "identificacionDestinatario").text = infoDestinatario[3]
         ET.SubElement(destinatario, "razonSocialDestinatario").text = infoDestinatario[4]
@@ -112,8 +88,8 @@ class xmlGenerator():
             ET.SubElement(detalle, "cantidad").text = str(infoDetalle[-3])
 
         infoadicional = ET.SubElement(root, "infoAdicional")
-        ET.SubElement(infoadicional, "campoAdicional", nombre="Agente de Retencion").text = "No.Resolucion:"
+        ET.SubElement(infoadicional, "campoAdicional", nombre="Agente de Retencion").text = "No.Resolucion:123"
         arbol = ET.ElementTree(root)
-        fileName = "files\prueba2.xml"
+        fileName = "files\prueba3.xml"
         arbol.write(fileName, encoding="UTF-8", xml_declaration=True)
         return fileName
