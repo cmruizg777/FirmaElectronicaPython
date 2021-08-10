@@ -15,8 +15,8 @@ class Module11:
 
     def getModule11(self):
 
-
-
+        #n = random.randint(10000000, 99999999)
+        #self.Digito8 = str(n)
         year = self.Fecha.strftime("%Y")
         month = self.Fecha.strftime("%m")
         day = self.Fecha.strftime("%d")
@@ -25,30 +25,31 @@ class Module11:
                 self.TipoComprobante +
                 self.RucEmpresa +
                 self.Ambiente +
-                self.PtoEmision +
                 self.Sucursal +
+                self.PtoEmision +
                 self.Secuencial +
                 self.Digito8 +
                 "1"
         )
 
         suma = 0
-        factor = [3, 2, 7, 6, 5, 4]
+        #factor = [3, 2, 7, 6, 5, 4]
+        factor = 7
         #claveAccesoArray = claveAcceso.split("")
         index = 0
         idx = 0
         for item in claveAcceso:
 
-            if idx%6 == 0:
-                index = 0
-            currentFactor = factor[index]
-            suma = suma + int(item) * currentFactor
-
-            #factor = factor - 1
-            #if (factor == 1):
-            #    factor = 7
-            index += 1
-            idx += 1
+            #if idx%6 == 0:
+            #    index = 0
+            #currentFactor = factor[index]
+            #suma = suma + int(item) * currentFactor
+            suma = suma + int(item) * factor
+            factor = factor - 1
+            if (factor == 1):
+                factor = 7
+            #index += 1
+            #idx += 1
         digitoVerificador = (suma % 11)
         digitoVerificador = 11 - digitoVerificador
 

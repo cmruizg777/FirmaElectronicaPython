@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<guiaRemision id="comprobante" version="1.1.0"><infoTributaria><ambiente>1</ambiente><tipoEmision>1</tipoEmision><nombreComercial>SALAZAR AGUILAR LUIS GUILLERMO</nombreComercial><ruc>0704453810001</ruc><claveAcceso>0505202106070445381000111000010000009301234567811</claveAcceso><codDoc>01</codDoc><estab>001</estab><ptoEmi>100</ptoEmi><secuencial>000000930</secuencial><dirMatriz>SAN MARCOS DECIMA QUINTA SN Y LUIS ESPINOZA</dirMatriz></infoTributaria><infoGuiaRemision><dirEstablecimiento>SAN MARCOS DECIMA QUINTA SN Y LUIS ESPINOZA</dirEstablecimiento><dirPartida>SAN MARCOS DECIMA QUINTA SN Y LUIS ESPINOZA</dirPartida><razonSocialTransportista>BRYAN MUÑOZ</razonSocialTransportista><tipoIdentificacionTransportista>04</tipoIdentificacionTransportista><rucTransportista>0750698789</rucTransportista><obligadoContabilidad>NO</obligadoContabilidad><fechaIniTransporte>05/05/2021</fechaIniTransporte><fechaFinTransporte>05/05/2021</fechaFinTransporte><placa>OBA1822</placa></infoGuiaRemision><destinatarios><destinatario><identificacionDestinatario>0703623652001</identificacionDestinatario><razonSocialDestinatario>MARICH VIVAR HOOVER ANDRES</razonSocialDestinatario><dirDestinatario>TENGUEL SITIO EL CONCHERO S/N</dirDestinatario><motivoTraslado>MOVILIZACION DE MERCADERIA</motivoTraslado><detalles><detalle><codigoInterno>1575</codigoInterno><codigoAdicional>1575</codigoAdicional><descripcion>GAVETAS CONICAS</descripcion><cantidad>460</cantidad></detalle><detalle><codigoInterno>1576</codigoInterno><codigoAdicional>1576</codigoAdicional><descripcion>GAVETAS CALADAS</descripcion><cantidad>60</cantidad></detalle><detalle><codigoInterno>1577</codigoInterno><codigoAdicional>1577</codigoAdicional><descripcion>BINES</descripcion><cantidad>0</cantidad></detalle><detalle><codigoInterno>1578</codigoInterno><codigoAdicional>1578</codigoAdicional><descripcion>OTROS</descripcion><cantidad>0</cantidad></detalle><detalle><codigoInterno>1579</codigoInterno><codigoAdicional>1579</codigoAdicional><descripcion>SACOS C/HIELO</descripcion><cantidad>450</cantidad></detalle><detalle><codigoInterno>1580</codigoInterno><codigoAdicional>1580</codigoAdicional><descripcion>SACOS METABISULFITO</descripcion><cantidad>0</cantidad></detalle><detalle><codigoInterno>1581</codigoInterno><codigoAdicional>1581</codigoAdicional><descripcion>SACOS SAL</descripcion><cantidad>0</cantidad></detalle></detalles></destinatario></destinatarios><infoAdicional><campoAdicional nombre="Agente de Retencion">No.Resolucion:</campoAdicional></infoAdicional><ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:etsi="http://uri.etsi.org/01903/v1.3.2#" Id="Signature228584">
-<ds:SignedInfo Id="Signature-SignedInfo171447">
+<guiaRemision id="comprobante" version="1.1.0"><infoTributaria><ambiente>1</ambiente><tipoEmision>1</tipoEmision><razonSocial>CABLESPEED CIA LTDA</razonSocial><ruc>1091725041001</ruc><claveAcceso>0308202106109172504100110010010000009321575110617</claveAcceso><codDoc>06</codDoc><estab>001</estab><ptoEmi>001</ptoEmi><secuencial>000000932</secuencial><dirMatriz>SAN MARCOS DECIMA QUINTA SN Y LUIS ESPINOZA</dirMatriz></infoTributaria><infoGuiaRemision><dirEstablecimiento>SAN MARCOS DECIMA QUINTA SN Y LUIS ESPINOZA</dirEstablecimiento><dirPartida>SAN MARCOS DECIMA QUINTA SN Y LUIS ESPINOZA</dirPartida><razonSocialTransportista>BRYAN MUÑOZ</razonSocialTransportista><tipoIdentificacionTransportista>04</tipoIdentificacionTransportista><rucTransportista>0750698789</rucTransportista><obligadoContabilidad>NO</obligadoContabilidad><fechaIniTransporte>03/08/2021</fechaIniTransporte><fechaFinTransporte>03/08/2021</fechaFinTransporte><placa>OBA1822</placa></infoGuiaRemision><destinatarios><destinatario><identificacionDestinatario>0703623652001</identificacionDestinatario><razonSocialDestinatario>MARICH VIVAR HOOVER ANDRES</razonSocialDestinatario><dirDestinatario>TENGUEL SITIO EL CONCHERO S/N</dirDestinatario><motivoTraslado>MOVILIZACION DE MERCADERIA</motivoTraslado><detalles><detalle><codigoInterno>1575</codigoInterno><codigoAdicional>1575</codigoAdicional><descripcion>GAVETAS CONICAS</descripcion><cantidad>460</cantidad></detalle><detalle><codigoInterno>1576</codigoInterno><codigoAdicional>1576</codigoAdicional><descripcion>GAVETAS CALADAS</descripcion><cantidad>60</cantidad></detalle><detalle><codigoInterno>1577</codigoInterno><codigoAdicional>1577</codigoAdicional><descripcion>BINES</descripcion><cantidad>0</cantidad></detalle><detalle><codigoInterno>1578</codigoInterno><codigoAdicional>1578</codigoAdicional><descripcion>OTROS</descripcion><cantidad>0</cantidad></detalle><detalle><codigoInterno>1579</codigoInterno><codigoAdicional>1579</codigoAdicional><descripcion>SACOS C/HIELO</descripcion><cantidad>450</cantidad></detalle><detalle><codigoInterno>1580</codigoInterno><codigoAdicional>1580</codigoAdicional><descripcion>SACOS METABISULFITO</descripcion><cantidad>0</cantidad></detalle><detalle><codigoInterno>1581</codigoInterno><codigoAdicional>1581</codigoAdicional><descripcion>SACOS SAL</descripcion><cantidad>0</cantidad></detalle></detalles></destinatario></destinatarios><infoAdicional><campoAdicional nombre="Agente de Retencion">No.Resolucion:123</campoAdicional></infoAdicional><ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:etsi="http://uri.etsi.org/01903/v1.3.2#" Id="Signature328759">
+<ds:SignedInfo Id="Signature-SignedInfo150036">
 <ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"></ds:CanonicalizationMethod>
 <ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"></ds:SignatureMethod>
-<ds:Reference Id="SignedPropertiesID35639" Type="http://uri.etsi.org/01903#SignedProperties" URI="#Signature228584-SignedProperties764763">
+<ds:Reference Id="SignedPropertiesID467002" Type="http://uri.etsi.org/01903#SignedProperties" URI="#Signature328759-SignedProperties967091">
 <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod>
-<ds:DigestValue>aOge/iWlWqwKjVC6CbzWa8G/IYA=</ds:DigestValue>
+<ds:DigestValue>dCvBEE3yeAn5q3B7gTqcRypePTE=</ds:DigestValue>
 </ds:Reference>
-<ds:Reference URI="#Certificate1839402">
+<ds:Reference URI="#Certificate1294886">
 <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod>
-<ds:DigestValue>z8AvWEEOaoTRD6OQj6Su8+g/r98=</ds:DigestValue>
+<ds:DigestValue>Kum/t0niD5NpMHsnFqSnkD8ZRqA=</ds:DigestValue>
 </ds:Reference>
-<ds:Reference Id="Reference-ID-371992" URI="#comprobante">
+<ds:Reference Id="Reference-ID-759702" URI="#comprobante">
 <ds:Transforms>
 <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"></ds:Transform>
 </ds:Transforms>
 <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod>
-<ds:DigestValue>YkVZRpBUVia4wYAtOhmWdJ/slN0=</ds:DigestValue>
+<ds:DigestValue>89UVZTfTIwb3m2J78K8X/P0b4t4=</ds:DigestValue>
 </ds:Reference>
 </ds:SignedInfo>
-<ds:SignatureValue Id="SignatureValue119953">
-S9tflU8RQoO6rCvrgG8kZX5uHLBBaf+Wuwm3fEIdsS+YVO/MGOz2lMguL+xuyC9P1GHw4HOd7xtT
-DhxRCOMFRxCNVQD74H0NTH/lJklKmuRGgx5cKRxfRc7NyQw3FreQ9Wkop4eEwZLbKsvuknbyoZLU
-GhlXfYj25pQzhXx4zr7sRxGS8Q/qnQZ8Ml8OHJ56XIU8M1uOHucMBCAkv0tA61Iim1WgRBakxZf6
-M1ujQkx2gr3MKRYenl11VVodq54Ep3wJDcChB3eLnZt1qEidOgnnQjtjxyxVrIAj03yGniNnRGSs
-rgE3ow9YQEJY4MxgDYx4zB/ppsmBS5qcZntzOQ==
+<ds:SignatureValue Id="SignatureValue447931">
+oBrx9ru3whAQezyUJQDPfNkWXYCMR2x+klZO7YAkOi6xx+UwyeMWhKtaMEFwgB/txpipCC4zgoHv
+25G/jxi9zgsk2cxSzJlZBLhghJJTD3MnrTWQ4u6FSLPmXrhedqudjByEsrmMBXgErSSNVBwCVOFU
+Xsznm/a3VsGoZJve6VNbMcC5siwNnv6lzyojqoLVCDxl0LNLu4MGSeOF/COh+EPwdF4ss84RfOn6
+XzZvY456VElVHe+0NFcfaYDpLz5F/BW+7uMkUsCYViP8bLD8mBdYNFb5iYs/swnS4ZgWWVGdLxC4
+KAU7Vg2N5Qcp4AUr9eZH4SgsQ0ANMgZgHb/wgA==
 </ds:SignatureValue>
-<ds:KeyInfo Id="Certificate1839402">
+<ds:KeyInfo Id="Certificate1294886">
 <ds:X509Data>
 <ds:X509Certificate>
 MIIJkjCCCHqgAwIBAgIEVM5FWDANBgkqhkiG9w0BAQsFADCBkzELMAkGA1UEBhMCRUMxGzAZBgNV
@@ -88,4 +88,4 @@ qsIoM8KcS8tGe9nUXNvbrcCNd/oKrft7pHFblw==
 </ds:RSAKeyValue>
 </ds:KeyValue>
 </ds:KeyInfo>
-<ds:Object Id="Signature228584-Object201550"><etsi:QualifyingProperties Target="#Signature228584"><etsi:SignedProperties Id="Signature228584-SignedProperties764763"><etsi:SignedSignatureProperties><etsi:SigningTime>2021-08-02T18:12:25-05:00</etsi:SigningTime><etsi:SigningCertificate><etsi:Cert><etsi:CertDigest><ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod><ds:DigestValue>GjoPkHblYkmpfTiqa51lJbI3l7Y=</ds:DigestValue></etsi:CertDigest><etsi:IssuerSerial><ds:X509IssuerName>CN=AUTORIDAD DE CERTIFICACION SUB SECURITY DATA,OU=ENTIDAD DE CERTIFICACION DE INFORMACION,O=SECURITY DATA S.A.,C=EC</ds:X509IssuerName><ds:X509SerialNumber>1422804312</ds:X509SerialNumber></etsi:IssuerSerial></etsi:Cert></etsi:SigningCertificate></etsi:SignedSignatureProperties><etsi:SignedDataObjectProperties><etsi:DataObjectFormat ObjectReference="#Reference-ID-371992"><etsi:Description>Comprobante</etsi:Description><etsi:MimeType>text/xml</etsi:MimeType></etsi:DataObjectFormat></etsi:SignedDataObjectProperties></etsi:SignedProperties></etsi:QualifyingProperties></ds:Object></ds:Signature></guiaRemision>
+<ds:Object Id="Signature328759-Object60291"><etsi:QualifyingProperties Target="#Signature328759"><etsi:SignedProperties Id="Signature328759-SignedProperties967091"><etsi:SignedSignatureProperties><etsi:SigningTime>2021-08-09T19:13:09-05:00</etsi:SigningTime><etsi:SigningCertificate><etsi:Cert><etsi:CertDigest><ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod><ds:DigestValue>GjoPkHblYkmpfTiqa51lJbI3l7Y=</ds:DigestValue></etsi:CertDigest><etsi:IssuerSerial><ds:X509IssuerName>CN=AUTORIDAD DE CERTIFICACION SUB SECURITY DATA,OU=ENTIDAD DE CERTIFICACION DE INFORMACION,O=SECURITY DATA S.A.,C=EC</ds:X509IssuerName><ds:X509SerialNumber>1422804312</ds:X509SerialNumber></etsi:IssuerSerial></etsi:Cert></etsi:SigningCertificate></etsi:SignedSignatureProperties><etsi:SignedDataObjectProperties><etsi:DataObjectFormat ObjectReference="#Reference-ID-759702"><etsi:Description>contenido comprobante</etsi:Description><etsi:MimeType>text/xml</etsi:MimeType></etsi:DataObjectFormat></etsi:SignedDataObjectProperties></etsi:SignedProperties></etsi:QualifyingProperties></ds:Object></ds:Signature></guiaRemision>

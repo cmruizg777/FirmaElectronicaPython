@@ -72,8 +72,6 @@ class Xades(object):
         ]
         print(command)
         try:
-
-            logging.info('Firmando XML ...')
             subprocess.check_output(command)
         except subprocess.CalledProcessError as e:
             returncode = e.returncode
