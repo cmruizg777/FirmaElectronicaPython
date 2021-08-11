@@ -1,5 +1,0 @@
-CREATE USER SA PASSWORD "" ADMIN
-/*C1*/SET SCHEMA PUBLIC
-CONNECT USER SA
-CREATE  TABLE CLIENTES (codCliente INTEGER PRIMARY KEY, nombreRazonSocial VARCHAR(70),tipoIdentificacion VARCHAR(1),numeroIdentificacion VARCHAR(15),direccion VARCHAR(250),telefonoConvencional VARCHAR(15),extension VARCHAR(10),celular VARCHAR(15),correo VARCHAR(2),tipo_cliente varchar(1),CONSTRAINT UNIQUE_RUC UNIQUE(numeroIdentificacion,tipo_cliente))
-DISCONNECT
