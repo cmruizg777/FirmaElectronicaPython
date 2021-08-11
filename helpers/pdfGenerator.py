@@ -7,7 +7,7 @@ from fpdf import FPDF
 
 class pdfGenerator:
 
-    def generateRemissionGuidePdf(self, data, accessKey, logo_file):
+    def generateRemissionGuidePdf(self, data, logo_file):
 
         infoTributariaEmpresa = data[0][0]
         infoTributariaSecuenciales = data[1][0]
@@ -67,9 +67,7 @@ class pdfGenerator:
         pdf.set_text_color(255, 255, 255)
         pdf.cell(col_width, th, 'GUIA DE REMISION' , align='C', border=0,  ln=1, fill=True)
         pdf.set_text_color(0, 0, 0)
-        pdf.cell(col_width, th, 'No. ' + sucursal + ptoEmision + secuencial, align='L', border=0,  ln=1)
-        pdf.set_font('Times', 'B', 12.0)
-        th = pdf.font_size * 4
+        pdf.cell(col_width, th, 'No. ' + sucursal +'-'+ ptoEmision +'-'+ secuencial, align='L', border=0,  ln=1)
         barcodeImg = 'files/img/barcode.png'
         pdf.image(barcodeImg, x=None, y=None, h=2 * th, w=col_width)
 
