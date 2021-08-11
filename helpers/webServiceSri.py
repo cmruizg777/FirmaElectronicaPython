@@ -59,11 +59,13 @@ class webServiceSri(object):
 
     @classmethod
     def send_receipt(self, document:str):
+        #text = self.get_receipt_soap_envelope_xml(document)
         buf = StringIO()
         buf.write(document)
         #print(buf.getvalue())
-        buffer_xml = base64.b64encode(bytes(buf.getvalue().encode('utf-8')))
-        text = buffer_xml.decode('ascii')
+        #buffer_xml = base64.b64encode(bytes(buf.getvalue().encode('utf-8')))
+        buffer_xml = base64.b64encode(document.encode())
+
         #print(buffer_xml.decode('ascii'))
         #print(len(buffer_xml))
         if not utils.check_service('prueba'):
@@ -71,11 +73,15 @@ class webServiceSri(object):
             raise Exception('Error SRI', 'Servicio SRI no disponible.')
 
         client = Client(self.get_active_ws()[0])
-        result = client.service.validarComprobante(buffer_xml.decode('ascii'))
+        client.set_options(headers = {'Content-Type': 'text/xml;charset="utf-8"', 'Accept': 'text/xml'})
+        print(client)
+        payload = buffer_xml.decode('ascii')
+        payload_enveloped = self.get_receipt_soap_envelope_xml(payload)
+        result = client.service.validarComprobante(payload)
         errores = []
 
         #print(result.status_code)
-        #print(result)
+        print(result)
 
         if result.estado == 'RECIBIDA':
             return True, errores
