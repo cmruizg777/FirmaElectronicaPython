@@ -14,21 +14,21 @@ xmlObject = xmlGenerator()
 xmlDocument, accessKey = xmlObject.generateRemissionGuideXml(data)
 
 
-#accessKey = '0308202106109172504100110010010000009321234567813'
+#accessKey = '0308202106109172504100110010010000009328710265711'
 xsdSchema = 'helpers/docs/guiaRemision_v1.1.0.xsd'
-xmlSignedDocument = 'files/192.xml'
+xmlSignedDocument = 'files/firmado.xml'
 
 xades = Xades()
 xades.sign(xmlDocument, xmlSignedDocument, p12File, password)
-#
-# #resp = xmlObject.validate(xmlSignedDocument, xsdSchema)
-# #print('Is valid: ', resp)
+resp = xmlObject.validate(xmlDocument, xsdSchema)
+print('Is valid: ', resp)
 in_file = open(xmlSignedDocument, 'r') # opening for [r]eading as [b]inary
 dataFile = in_file.read()
+#print(dataFile.encode('utf-8'))
 sri = webServiceSri()
 success, errors = sri.send_receipt(dataFile)
-# print(success, errors)
-#
+print(success, errors)
+
 if(success):
      auth, messages = sri.request_authorization(accessKey)
 #     print(auth)

@@ -59,22 +59,18 @@ class webServiceSri(object):
 
     @classmethod
     def send_receipt(self, document:str):
-        #text = self.get_receipt_soap_envelope_xml(document)
+
         buf = StringIO()
         buf.write(document)
-        #print(buf.getvalue())
-        #buffer_xml = base64.b64encode(bytes(buf.getvalue().encode('utf-8')))
         buffer_xml = base64.b64encode(document.encode())
-
-        #print(buffer_xml.decode('ascii'))
-        #print(len(buffer_xml))
+        #print(document)
         if not utils.check_service('prueba'):
             # TODO: implementar modo offline
             raise Exception('Error SRI', 'Servicio SRI no disponible.')
 
         client = Client(self.get_active_ws()[0])
         client.set_options(headers = {'Content-Type': 'text/xml;charset="utf-8"', 'Accept': 'text/xml'})
-        print(client)
+        #print(client)
         payload = buffer_xml.decode('ascii')
         payload_enveloped = self.get_receipt_soap_envelope_xml(payload)
         result = client.service.validarComprobante(payload)

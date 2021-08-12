@@ -56,24 +56,25 @@ class Xades(object):
         """
         #xml_str = xml_document.encode('utf-8')
         #JAR_PATH = 'firma/firmaXadesBes.jar'
-        JAR_PATH = 'firma/firmaxml1.jar'
+        #JAR_PATH = 'firma/firmaxml1.jar'
+        JAR_PATH = 'FirmaElectronica/FirmaElectronica.jar'
         #JAR_PATH = 'firmaSri\\FirmaSri.jar'
         JAVA_CMD = 'java'
         firma_path = os.path.join(os.path.dirname(__file__), JAR_PATH)
         print(firma_path)
         #firma_path = './'
         #
-        command = [
-            JAVA_CMD,
-            '-jar',
-            firma_path,
-            xml_document,
-            xml_signed_path,
-            file_pk12,
-            password
-            #file_pk12),
-            #base64.b64encode(password)
-        ]
+        # command = [
+        #     JAVA_CMD,
+        #     '-jar',
+        #     firma_path,
+        #     xml_document,
+        #     xml_signed_path,
+        #     file_pk12,
+        #     password
+        #     #file_pk12),
+        #     #base64.b64encode(password)
+        # ]
         # command = [
         #     JAVA_CMD,
         #     '-jar',
@@ -86,6 +87,17 @@ class Xades(object):
         #     # file_pk12),
         #     # base64.b64encode(password)
         # ]
+        command = [
+            JAVA_CMD,
+            '-jar',
+            firma_path,
+            xml_document,
+            file_pk12,
+            password,
+            xml_signed_path
+            # file_pk12),
+            # base64.b64encode(password)
+        ]
         print(command)
         try:
             subprocess.check_output(command)
