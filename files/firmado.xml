@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<guiaRemision id="comprobante" version="1.1.0"><infoTributaria><ambiente>1</ambiente><tipoEmision>1</tipoEmision><razonSocial>CABLESPEED CIA LTDA</razonSocial><nombreComercial>SALAZAR AGUILAR LUIS GUILLERMO</nombreComercial><ruc>1091725041001</ruc><claveAcceso>0308202106109172504100110010010000009327193721711</claveAcceso><codDoc>06</codDoc><estab>001</estab><ptoEmi>001</ptoEmi><secuencial>000000932</secuencial><dirMatriz>SAN MARCOS DECIMA QUINTA SN Y LUIS ESPINOZA</dirMatriz></infoTributaria><infoGuiaRemision><dirEstablecimiento>SAN MARCOS DECIMA QUINTA SN Y LUIS ESPINOZA</dirEstablecimiento><dirPartida>SAN MARCOS DECIMA QUINTA SN Y LUIS ESPINOZA</dirPartida><razonSocialTransportista>BRYAN MUÑOZ</razonSocialTransportista><tipoIdentificacionTransportista>05</tipoIdentificacionTransportista><rucTransportista>0750698789</rucTransportista><obligadoContabilidad>NO</obligadoContabilidad><fechaIniTransporte>03/08/2021</fechaIniTransporte><fechaFinTransporte>03/08/2021</fechaFinTransporte><placa>OBA1822</placa></infoGuiaRemision><destinatarios><destinatario><identificacionDestinatario>0703623652001</identificacionDestinatario><razonSocialDestinatario>MARICH VIVAR HOOVER ANDRES</razonSocialDestinatario><dirDestinatario>TENGUEL SITIO EL CONCHERO S/N</dirDestinatario><motivoTraslado>ENTREGA</motivoTraslado><detalles><detalle><codigoInterno>1</codigoInterno><codigoAdicional>1</codigoAdicional><descripcion>GAVETAS CONICAS</descripcion><cantidad>460</cantidad></detalle><detalle><codigoInterno>2</codigoInterno><codigoAdicional>2</codigoAdicional><descripcion>GAVETAS CALADAS</descripcion><cantidad>60</cantidad></detalle><detalle><codigoInterno>5</codigoInterno><codigoAdicional>5</codigoAdicional><descripcion>BINES</descripcion><cantidad>0</cantidad></detalle><detalle><codigoInterno>6</codigoInterno><codigoAdicional>6</codigoAdicional><descripcion>OTROS</descripcion><cantidad>0</cantidad></detalle><detalle><codigoInterno>7</codigoInterno><codigoAdicional>7</codigoAdicional><descripcion>SACOS C/HIELO</descripcion><cantidad>450</cantidad></detalle><detalle><codigoInterno>8</codigoInterno><codigoAdicional>8</codigoAdicional><descripcion>SACOS METABISULFITO</descripcion><cantidad>0</cantidad></detalle><detalle><codigoInterno>9</codigoInterno><codigoAdicional>9</codigoAdicional><descripcion>SACOS SAL</descripcion><cantidad>0</cantidad></detalle></detalles></destinatario></destinatarios><infoAdicional><campoAdicional nombre="Agente de Retención">No.Resolución: </campoAdicional></infoAdicional><ds:Signature Id="Signature594468" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:etsi="http://uri.etsi.org/01903/v1.3.2#">
-<ds:SignedInfo Id="Signature-SignedInfo855928">
+<guiaRemision id="comprobante" version="1.1.0"><infoTributaria><ambiente>1</ambiente><tipoEmision>1</tipoEmision><razonSocial>CABLESPEED CIA LTDA</razonSocial><nombreComercial>SALAZAR AGUILAR LUIS GUILLERMO</nombreComercial><ruc>1091725041001</ruc><claveAcceso>0308202106109172504100110010010000009322825655017</claveAcceso><codDoc>06</codDoc><estab>001</estab><ptoEmi>001</ptoEmi><secuencial>000000932</secuencial><dirMatriz>SAN MARCOS DECIMA QUINTA SN Y LUIS ESPINOZA</dirMatriz></infoTributaria><infoGuiaRemision><dirEstablecimiento>SAN MARCOS DECIMA QUINTA SN Y LUIS ESPINOZA</dirEstablecimiento><dirPartida>SAN MARCOS DECIMA QUINTA SN Y LUIS ESPINOZA</dirPartida><razonSocialTransportista>BRYAN MUÑOZ</razonSocialTransportista><tipoIdentificacionTransportista>05</tipoIdentificacionTransportista><rucTransportista>0750698789</rucTransportista><obligadoContabilidad>NO</obligadoContabilidad><fechaIniTransporte>03/08/2021</fechaIniTransporte><fechaFinTransporte>03/08/2021</fechaFinTransporte><placa>OBA1822</placa></infoGuiaRemision><destinatarios><destinatario><identificacionDestinatario>0703623652001</identificacionDestinatario><razonSocialDestinatario>MARICH VIVAR HOOVER ANDRES</razonSocialDestinatario><dirDestinatario>TENGUEL SITIO EL CONCHERO S/N</dirDestinatario><motivoTraslado>ENTREGA</motivoTraslado><detalles><detalle><codigoInterno>1</codigoInterno><codigoAdicional>1</codigoAdicional><descripcion>GAVETAS CONICAS</descripcion><cantidad>460</cantidad></detalle><detalle><codigoInterno>2</codigoInterno><codigoAdicional>2</codigoAdicional><descripcion>GAVETAS CALADAS</descripcion><cantidad>60</cantidad></detalle><detalle><codigoInterno>5</codigoInterno><codigoAdicional>5</codigoAdicional><descripcion>BINES</descripcion><cantidad>0</cantidad></detalle><detalle><codigoInterno>6</codigoInterno><codigoAdicional>6</codigoAdicional><descripcion>OTROS</descripcion><cantidad>0</cantidad></detalle><detalle><codigoInterno>7</codigoInterno><codigoAdicional>7</codigoAdicional><descripcion>SACOS C/HIELO</descripcion><cantidad>450</cantidad></detalle><detalle><codigoInterno>8</codigoInterno><codigoAdicional>8</codigoAdicional><descripcion>SACOS METABISULFITO</descripcion><cantidad>0</cantidad></detalle><detalle><codigoInterno>9</codigoInterno><codigoAdicional>9</codigoAdicional><descripcion>SACOS SAL</descripcion><cantidad>0</cantidad></detalle></detalles></destinatario></destinatarios><infoAdicional><campoAdicional nombre="Agente de Retención">No.Resolución: </campoAdicional></infoAdicional><ds:Signature Id="Signature498552" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:etsi="http://uri.etsi.org/01903/v1.3.2#">
+<ds:SignedInfo Id="Signature-SignedInfo259109">
 <ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
 <ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
-<ds:Reference Id="SignedPropertiesID1013352" Type="http://uri.etsi.org/01903#SignedProperties" URI="#Signature594468-SignedProperties57485">
+<ds:Reference Id="SignedPropertiesID221132" Type="http://uri.etsi.org/01903#SignedProperties" URI="#Signature498552-SignedProperties2003">
 <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
-<ds:DigestValue>qYu2tI+PUNi4dLfuXqB/ZlBTA64=</ds:DigestValue>
+<ds:DigestValue>MdD+I4ce+e/eOmLHd67THqToHa0=</ds:DigestValue>
 </ds:Reference>
-<ds:Reference URI="#Certificate163078">
+<ds:Reference URI="#Certificate163061">
 <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
-<ds:DigestValue>tsY9I6p7MOSXcFSRjyDCivsM7TU=</ds:DigestValue>
+<ds:DigestValue>EE1XWCyqiCyi+MsjjnJXjZKZ84E=</ds:DigestValue>
 </ds:Reference>
-<ds:Reference Id="Reference-ID-782571" URI="#comprobante">
+<ds:Reference Id="Reference-ID-625211" URI="#comprobante">
 <ds:Transforms>
 <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
 </ds:Transforms>
 <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
-<ds:DigestValue>BvGNsjtEVrZKcJwodoSjtdAJG6M=</ds:DigestValue>
+<ds:DigestValue>NcoVi9bLWWvQ0i2H44VPCufnbow=</ds:DigestValue>
 </ds:Reference>
 </ds:SignedInfo>
-<ds:SignatureValue Id="SignatureValue597746">
-a4r/NucLsXpY4vh9Nh1onAAEtNqnqg6Bzdk1KOW7Di+th2RRCNoRoLxhIfls3ilVF++uaMw5m4j0
-Djf5kPnKijqHJcv2mstO6pSv9vkEr9rJwR3DGCnCzmFUfElP34uDkKm4xgFgT8b20J/5lxDy+vxV
-gq0rP2fMW2LcL1oMlY94uk8LDzVjuMpnJKQ1RZYaA+uhiJl5sxlrnUElncOSqF27VWWGM+UXTt5a
-Xq3ZoXxnDiym2aO7fzt3Eh6JjOz08WrcF8Sm5JuMQLZ4VrtZHyupw0sSRq4gJ7oDvRNrSCZOCJaI
-r924W7+xxTOopO150VUw3csAPRyCPwQ7yJdAIA==
+<ds:SignatureValue Id="SignatureValue884243">
+IpUSe07GErQ9ABZBJC9ANSn0JpZLGAV+Da0tB5FKbkRZkaqRbc2bYKgJCvIawJTwLrY2JyESYEhX
+CHiERmQ++TL8NxG6PceNcJXnsiMdomA3kq7wwwCTfzSaUWtXXpggAx2naNJl/aIkpN3A+Fq3PLdr
+/QRfeb2SBj9So9sPQRZpsVt1eZeJzST+NjB5uCqTsf06x8f9oqWRJe4dKvQrUsefa8tiWrtHnYK8
+5tbXCeUrA2f7PuWpZNjz8fpIObqBefZh1CfMMwg3Uiu6WAL4MWXhZrMkcF4fmOSOilfM5rnYK9mq
+s2VGNwqdvZS0cEU8gT8sUUp49vGlbmRj3+w4Gg==
 </ds:SignatureValue>
-<ds:KeyInfo Id="Certificate163078">
+<ds:KeyInfo Id="Certificate163061">
 <ds:X509Data>
 <ds:X509Certificate>
 MIIJkjCCCHqgAwIBAgIEVM5FWDANBgkqhkiG9w0BAQsFADCBkzELMAkGA1UEBhMCRUMxGzAZBgNV
@@ -88,4 +88,4 @@ qsIoM8KcS8tGe9nUXNvbrcCNd/oKrft7pHFblw==
 </ds:RSAKeyValue>
 </ds:KeyValue>
 </ds:KeyInfo>
-<ds:Object Id="Signature594468-Object35064"><etsi:QualifyingProperties Target="#Signature594468"><etsi:SignedProperties Id="Signature594468-SignedProperties57485"><etsi:SignedSignatureProperties><etsi:SigningTime>2021-08-11T21:26:36-05:00</etsi:SigningTime><etsi:SigningCertificate><etsi:Cert><etsi:CertDigest><ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><ds:DigestValue>GjoPkHblYkmpfTiqa51lJbI3l7Y=</ds:DigestValue></etsi:CertDigest><etsi:IssuerSerial><ds:X509IssuerName>CN=AUTORIDAD DE CERTIFICACION SUB SECURITY DATA,OU=ENTIDAD DE CERTIFICACION DE INFORMACION,O=SECURITY DATA S.A.,C=EC</ds:X509IssuerName><ds:X509SerialNumber>1422804312</ds:X509SerialNumber></etsi:IssuerSerial></etsi:Cert></etsi:SigningCertificate></etsi:SignedSignatureProperties><etsi:SignedDataObjectProperties><etsi:DataObjectFormat ObjectReference="#Reference-ID-782571"><etsi:Description>contenido comprobante</etsi:Description><etsi:MimeType>text/xml</etsi:MimeType></etsi:DataObjectFormat></etsi:SignedDataObjectProperties></etsi:SignedProperties></etsi:QualifyingProperties></ds:Object></ds:Signature></guiaRemision>
+<ds:Object Id="Signature498552-Object534974"><etsi:QualifyingProperties Target="#Signature498552"><etsi:SignedProperties Id="Signature498552-SignedProperties2003"><etsi:SignedSignatureProperties><etsi:SigningTime>2021-08-11T23:34:24-05:00</etsi:SigningTime><etsi:SigningCertificate><etsi:Cert><etsi:CertDigest><ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><ds:DigestValue>GjoPkHblYkmpfTiqa51lJbI3l7Y=</ds:DigestValue></etsi:CertDigest><etsi:IssuerSerial><ds:X509IssuerName>CN=AUTORIDAD DE CERTIFICACION SUB SECURITY DATA,OU=ENTIDAD DE CERTIFICACION DE INFORMACION,O=SECURITY DATA S.A.,C=EC</ds:X509IssuerName><ds:X509SerialNumber>1422804312</ds:X509SerialNumber></etsi:IssuerSerial></etsi:Cert></etsi:SigningCertificate></etsi:SignedSignatureProperties><etsi:SignedDataObjectProperties><etsi:DataObjectFormat ObjectReference="#Reference-ID-625211"><etsi:Description>contenido comprobante</etsi:Description><etsi:MimeType>text/xml</etsi:MimeType></etsi:DataObjectFormat></etsi:SignedDataObjectProperties></etsi:SignedProperties></etsi:QualifyingProperties></ds:Object></ds:Signature></guiaRemision>

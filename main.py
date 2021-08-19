@@ -31,8 +31,8 @@ print(success, errors)
 
 if(success):
      auth, messages = sri.request_authorization(accessKey)
-#     print(auth)
-#     print(messages)
+     print(auth)
+     print(messages)
 #
 # barcode = barCodeGenerator()
 # barcode.generate(accessKey)

@@ -95,7 +95,7 @@ class webServiceSri(object):
         messages = []
         client = Client(self.get_active_ws()[1])
         result = client.service.autorizacionComprobante(access_key)
-        print(result)
+        #print(result)
         autorizacion = result.autorizaciones[0][0]
         mensajes = autorizacion.mensajes and autorizacion.mensajes[0] or []
 
